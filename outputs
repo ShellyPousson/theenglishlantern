@@ -1,0 +1,944 @@
+www.theenglishlantern.com
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The English Lantern | ESL Tutoring</title>
+    <meta
+      name="description"
+      content="The English Lantern offers English as a Second Language tutoring, conversation practice, writing coaching, and exam preparation in English and Spanish."
+      data-i18n-attr="content:metaDescription"
+    >
+    <link rel="icon" type="image/png" href="assets/the-english-lantern-mark.png">
+    <link rel="preload" href="assets/english-lantern-hero.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="The English Lantern home">
+        <img class="brand-logo" src="assets/the-english-lantern-mark.png" alt="" aria-hidden="true">
+        <span>The English Lantern</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation" data-i18n-attr="aria-label:primaryNav">
+        <a href="#programmes" data-i18n="navProgrammes">ESL Services</a>
+        <a href="#method" data-i18n="navMethod">Method</a>
+        <a href="#results" data-i18n="navResults">Progress</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-controls">
+        <div class="language-switch" aria-label="Choose language" data-i18n-attr="aria-label:languageLabel">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <a class="header-action" href="#contact" data-i18n="headerAction">Book a consultation</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-label="The English Lantern introduction" data-i18n-attr="aria-label:heroLabel">
+        <img class="hero-image" src="assets/english-lantern-hero.png" alt="A warm reading lamp illuminating books and handwritten notes on a study table at dusk." data-i18n-attr="alt:heroImageAlt">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="heroEyebrow">English as a Second Language tutoring</p>
+          <h1>The English Lantern</h1>
+          <p class="hero-copy" data-i18n="heroCopy">
+            ESL lessons for adults and students who want clearer speaking, stronger writing, and more confidence using English in real life.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact" data-i18n="heroPrimary">Start with a consultation</a>
+            <a class="button button-secondary" href="#programmes" data-i18n="heroSecondary">Explore ESL services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro" aria-label="Learning focus" data-i18n-attr="aria-label:introLabel">
+        <div class="intro-copy">
+          <p class="section-kicker" data-i18n="introKicker">For English learners</p>
+          <h2 data-i18n="introHeading">Practical ESL lessons with structure, warmth, and clear next steps.</h2>
+        </div>
+        <div class="intro-grid">
+          <article>
+            <span>01</span>
+            <h3 data-i18n="introOneTitle">Speaking</h3>
+            <p data-i18n="introOneText">Conversation sessions build natural rhythm, sharper listening, pronunciation support, and the confidence to speak without over-translating.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-i18n="introTwoTitle">Writing</h3>
+            <p data-i18n="introTwoText">From school essays to professional emails, coaching focuses on grammar, organization, tone, and precise expression.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-i18n="introThreeTitle">Everyday English</h3>
+            <p data-i18n="introThreeText">Lessons connect English to real situations: work, school, appointments, interviews, travel, and community life.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="programmes" id="programmes">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="programmesKicker">ESL Services</p>
+          <h2 data-i18n="programmesHeading">Choose the English support that fits your life.</h2>
+        </div>
+        <div class="programme-list">
+          <article class="programme">
+            <div>
+              <p class="programme-type" data-i18n="programmeOneType">One-to-one</p>
+              <h3 data-i18n="programmeOneTitle">ESL Lantern Sessions</h3>
+            </div>
+            <p data-i18n="programmeOneText">Personal English lessons built around your level, goals, first language, and weekly schedule.</p>
+            <a href="#contact" data-i18n="programmeLink">Enquire</a>
+          </article>
+          <article class="programme">
+            <div>
+              <p class="programme-type" data-i18n="programmeTwoType">Conversation</p>
+              <h3 data-i18n="programmeTwoTitle">Speak With Confidence</h3>
+            </div>
+            <p data-i18n="programmeTwoText">Guided speaking practice for pronunciation, listening, vocabulary, and natural conversation.</p>
+            <a href="#contact" data-i18n="programmeLink">Enquire</a>
+          </article>
+          <article class="programme">
+            <div>
+              <p class="programme-type" data-i18n="programmeThreeType">School and work</p>
+              <h3 data-i18n="programmeThreeTitle">Writing and Grammar Coaching</h3>
+            </div>
+            <p data-i18n="programmeThreeText">Support for essays, emails, resumes, interviews, presentations, and clear professional English.</p>
+            <a href="#contact" data-i18n="programmeLink">Enquire</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="method" id="method">
+        <div class="method-panel">
+          <p class="section-kicker" data-i18n="methodKicker">Method</p>
+          <h2 data-i18n="methodHeading">Lessons are calm, practical, and focused on the English you actually need.</h2>
+          <p data-i18n="methodText">
+            Each learner receives a simple plan, weekly practice, and feedback that separates habit from hesitation. Grammar is taught through real expression, not isolated drills.
+          </p>
+        </div>
+        <div class="steps" aria-label="Teaching method" data-i18n-attr="aria-label:methodLabel">
+          <div>
+            <strong data-i18n="stepOneTitle">Listen</strong>
+            <span data-i18n="stepOneText">Understand your goals, current level, and the situations where English feels difficult.</span>
+          </div>
+          <div>
+            <strong data-i18n="stepTwoTitle">Practise</strong>
+            <span data-i18n="stepTwoText">Use guided speaking and writing tasks matched to real conversations and responsibilities.</span>
+          </div>
+          <div>
+            <strong data-i18n="stepThreeTitle">Refine</strong>
+            <span data-i18n="stepThreeText">Review mistakes, polish language, and track progress you can hear and see.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="results" id="results">
+        <div>
+          <p class="section-kicker" data-i18n="resultsKicker">Progress</p>
+          <h2 data-i18n="resultsHeading">Steady growth in the English you use every day.</h2>
+        </div>
+        <div class="metrics">
+          <div><strong>ESL</strong><span data-i18n="metricOne">English as a Second Language focus</span></div>
+          <div><strong>1:1</strong><span data-i18n="metricTwo">personal feedback on speaking and writing</span></div>
+          <div><strong>ES/EN</strong><span data-i18n="metricThree">support available in English and Spanish</span></div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-copy">
+          <p class="section-kicker" data-i18n="contactKicker">Begin</p>
+          <h2 data-i18n="contactHeading">Book a consultation and bring your English goals into focus.</h2>
+          <p data-i18n="contactText">Share your level, schedule, first language, and the situations where English needs to feel easier.</p>
+        </div>
+        <form class="contact-form" action="mailto:theenglishlanternesl@gmail.com" method="post" enctype="text/plain">
+          <label>
+            <span data-i18n="formName">Name</span>
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span data-i18n="formEmail">Email</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span data-i18n="formGoal">Goal</span>
+            <select name="goal" required>
+              <option value="" data-i18n="formChoose">Choose one</option>
+              <option data-i18n="formGoalOne">Conversation confidence</option>
+              <option data-i18n="formGoalTwo">Writing and grammar</option>
+              <option data-i18n="formGoalThree">School or exam preparation</option>
+              <option data-i18n="formGoalFour">Workplace English</option>
+            </select>
+          </label>
+          <labconst header = document.querySelector("[data-header]");
+const languageButtons = document.querySelectorAll("[data-lang]");
+
+const translations = {
+  en: {
+    pageTitle: "The English Lantern | ESL Tutoring",
+    metaDescription: "The English Lantern offers English as a Second Language tutoring, conversation practice, writing coaching, and exam preparation in English and Spanish.",
+    primaryNav: "Primary navigation",
+    languageLabel: "Choose language",
+    navProgrammes: "ESL Services",
+    navMethod: "Method",
+    navResults: "Progress",
+    navContact: "Contact",
+    headerAction: "Book a consultation",
+    heroLabel: "The English Lantern introduction",
+    heroImageAlt: "A warm reading lamp illuminating books and handwritten notes on a study table at dusk.",
+    heroEyebrow: "English as a Second Language tutoring",
+    heroCopy: "ESL lessons for adults and students who want clearer speaking, stronger writing, and more confidence using English in real life.",
+    heroPrimary: "Start with a consultation",
+    heroSecondary: "Explore ESL services",
+    introLabel: "Learning focus",
+    introKicker: "For English learners",
+    introHeading: "Practical ESL lessons with structure, warmth, and clear next steps.",
+    introOneTitle: "Speaking",
+    introOneText: "Conversation sessions build natural rhythm, sharper listening, pronunciation support, and the confidence to speak without over-translating.",
+    introTwoTitle: "Writing",
+    introTwoText: "From school essays to professional emails, coaching focuses on grammar, organization, tone, and precise expression.",
+    introThreeTitle: "Everyday English",
+    introThreeText: "Lessons connect English to real situations: work, school, appointments, interviews, travel, and community life.",
+    programmesKicker: "ESL Services",
+    programmesHeading: "Choose the English support that fits your life.",
+    programmeOneType: "One-to-one",
+    programmeOneTitle: "ESL Lantern Sessions",
+    programmeOneText: "Personal English lessons built around your level, goals, first language, and weekly schedule.",
+    programmeTwoType: "Conversation",
+    programmeTwoTitle: "Speak With Confidence",
+    programmeTwoText: "Guided speaking practice for pronunciation, listening, vocabulary, and natural conversation.",
+    programmeThreeType: "School and work",
+    programmeThreeTitle: "Writing and Grammar Coaching",
+    programmeThreeText: "Support for essays, emails, resumes, interviews, presentations, and clear professional English.",
+    programmeLink: "Enquire",
+    methodKicker: "Method",
+    methodHeading: "Lessons are calm, practical, and focused on the English you actually need.",
+    methodText: "Each learner receives a simple plan, weekly practice, and feedback that separates habit from hesitation. Grammar is taught through real expression, not isolated drills.",
+    methodLabel: "Teaching method",
+    stepOneTitle: "Listen",
+    stepOneText: "Understand your goals, current level, and the situations where English feels difficult.",
+    stepTwoTitle: "Practise",
+    stepTwoText: "Use guided speaking and writing tasks matched to real conversations and responsibilities.",
+    stepThreeTitle: "Refine",
+    stepThreeText: "Review mistakes, polish language, and track progress you can hear and see.",
+    resultsKicker: "Progress",
+    resultsHeading: "Steady growth in the English you use every day.",
+    metricOne: "English as a Second Language focus",
+    metricTwo: "personal feedback on speaking and writing",
+    metricThree: "support available in English and Spanish",
+    contactKicker: "Begin",
+    contactHeading: "Book a consultation and bring your English goals into focus.",
+    contactText: "Share your level, schedule, first language, and the situations where English needs to feel easier.",
+    formName: "Name",
+    formEmail: "Email",
+    formGoal: "Goal",
+    formChoose: "Choose one",
+    formGoalOne: "Conversation confidence",
+    formGoalTwo: "Writing and grammar",
+    formGoalThree: "School or exam preparation",
+    formGoalFour: "Workplace English",
+    formMessage: "Message",
+    formMessagePlaceholder: "Tell us what you would like help with.",
+    formButton: "Request consultation",
+    footerText: "English as a Second Language tutoring, writing coaching, and conversation practice."
+  },
+  es: {
+    pageTitle: "The English Lantern | Clases de ESL",
+    metaDescription: "The English Lantern ofrece clases de inglés como segundo idioma, práctica de conversación, apoyo de escritura y preparación académica en inglés y español.",
+    primaryNav: "Navegación principal",
+    languageLabel: "Elegir idioma",
+    navProgrammes: "Servicios ESL",
+    navMethod: "Método",
+    navResults: "Progreso",
+    navContact: "Contacto",
+    headerAction: "Reservar consulta",
+    heroLabel: "Introducción a The English Lantern",
+    heroImageAlt: "Una lámpara de lectura ilumina libros y notas escritas a mano sobre una mesa de estudio al atardecer.",
+    heroEyebrow: "Clases de inglés como segundo idioma",
+    heroCopy: "Clases de ESL para adultos y estudiantes que quieren hablar con más claridad, escribir mejor y usar el inglés con más confianza en la vida diaria.",
+    heroPrimary: "Empezar con una consulta",
+    heroSecondary: "Ver servicios ESL",
+    introLabel: "Enfoque de aprendizaje",
+    introKicker: "Para estudiantes de inglés",
+    introHeading: "Clases prácticas de ESL con estructura, calidez y pasos claros.",
+    introOneTitle: "Conversación",
+    introOneText: "Las sesiones de conversación desarrollan ritmo natural, mejor comprensión auditiva, apoyo de pronunciación y confianza para hablar sin traducir demasiado.",
+    introTwoTitle: "Escritura",
+    introTwoText: "Desde ensayos escolares hasta correos profesionales, el apoyo se enfoca en gramática, organización, tono y expresión precisa.",
+    introThreeTitle: "Inglés diario",
+    introThreeText: "Las clases conectan el inglés con situaciones reales: trabajo, escuela, citas, entrevistas, viajes y vida en la comunidad.",
+    programmesKicker: "Servicios ESL",
+    programmesHeading: "Elige el apoyo de inglés que se adapte a tu vida.",
+    programmeOneType: "Individual",
+    programmeOneTitle: "Sesiones ESL Lantern",
+    programmeOneText: "Clases personales de inglés basadas en tu nivel, metas, idioma principal y horario semanal.",
+    programmeTwoType: "Conversación",
+    programmeTwoTitle: "Habla con confianza",
+    programmeTwoText: "Práctica guiada para pronunciación, comprensión auditiva, vocabulario y conversación natural.",
+    programmeThreeType: "Escuela y trabajo",
+    programmeThreeTitle: "Escritura y gramática",
+    programmeThreeText: "Apoyo para ensayos, correos, currículums, entrevistas, presentaciones e inglés profesional claro.",
+    programmeLink: "Consultar",
+    methodKicker: "Método",
+    methodHeading: "Las clases son tranquilas, prácticas y enfocadas en el inglés que realmente necesitas.",
+    methodText: "Cada estudiante recibe un plan sencillo, práctica semanal y comentarios claros para distinguir hábitos de dudas. La gramática se aprende a través de expresión real, no con ejercicios aislados.",
+    methodLabel: "Método de enseñanza",
+    stepOneTitle: "Escuchar",
+    stepOneText: "Entender tus metas, tu nivel actual y las situaciones donde el inglés se siente difícil.",
+    stepTwoTitle: "Practicar",
+    stepTwoText: "Usar actividades guiadas de conversación y escritura conectadas con conversaciones y responsabilidades reales.",
+    stepThreeTitle: "Mejorar",
+    stepThreeText: "Revisar errores, pulir el lenguaje y seguir un progreso que puedas escuchar y ver.",
+    resultsKicker: "Progreso",
+    resultsHeading: "Crecimiento constante en el inglés que usas todos los días.",
+    metricOne: "enfoque en inglés como segundo idioma",
+    metricTwo: "comentarios personales sobre conversación y escritura",
+    metricThree: "apoyo disponible en inglés y español",
+    contactKicker: "Comenzar",
+    contactHeading: "Reserva una consulta y aclara tus metas de inglés.",
+    contactText: "Comparte tu nivel, horario, idioma principal y las situaciones donde quieres sentir más facilidad con el inglés.",
+    formName: "Nombre",
+    formEmail: "Correo electrónico",
+    formGoal: "Meta",
+    formChoose: "Elige una opción",
+    formGoalOne: "Confianza al conversar",
+    formGoalTwo: "Escritura y gramática",
+    formGoalThree: "Preparación escolar o para exámenes",
+    formGoalFour: "Inglés para el trabajo",
+    formMessage: "Mensaje",
+    formMessagePlaceholder: "Cuéntanos en qué te gustaría recibir ayuda.",
+    formButton: "Solicitar consulta",
+    footerText: "Clases de inglés como segundo idioma, apoyo de escritura y práctica de conversación."
+  }
+};
+
+function updateHeader() {
+  header.classList.toggle("is-scrolled", window.scrollY > 24);
+}
+
+function setLanguage(language) {
+  const dictionary = translations[language] || translations.en;
+  document.documentElement.lang = language;
+  document.title = dictionary.pageTitle;
+
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+    if (dictionary[key]) {
+      element.textContent = dictionary[key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-attr]").forEach((element) => {
+    element.dataset.i18nAttr.split(" ").forEach((entry) => {
+      const [attribute, key] = entry.split(":");
+      if (attribute && key && dictionary[key]) {
+        element.setAttribute(attribute, dictionary[key]);
+      }
+    });
+  });
+
+  languageButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(button.dataset.lang === language));
+  });
+
+  localStorage.setItem("englishLanternLanguage", language);
+}
+
+languageButtons.forEach((button) => {
+  button.addEventListener("click", () => setLanguage(button.dataset.lang));
+});
+
+const savedLanguage = localStorage.getItem("englishLanternLanguage");
+const browserLanguage = navigator.language.toLowerCase().startsWith("es") ? "es" : "en";
+
+updateHeader();
+setLanguage(savedLanguage || browserLanguage);
+window.addEventListener("scroll", updateHeader, { passive: true });
+el>
+            <span data-i18n="formMessage">Message</span>
+            <textarea name="message" rows="4" placeholder="Tell us what you would like help with." data-i18n-attr="placeholder:formMessagePlaceholder"></textarea>
+          </label>
+          <button type="submit" data-i18n="formButton">Request consultation</button>
+        </for:root {
+  --ink: #16201d;
+  --ink-soft: #405049;
+  --paper: #fbf6e9;
+  --ivory: #fffaf0;
+  --moss: #536a55;
+  --moss-dark: #253a31;
+  --amber: #c7842b;
+  --amber-light: #f3c56e;
+  --red: #a94131;
+  --line: rgba(22, 32, 29, 0.16);
+  --shadow: 0 24px 70px rgba(22, 32, 29, 0.18);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) auto minmax(180px, 1fr);
+  align-items: center;
+  gap: 22px;
+  padding: 18px clamp(18px, 4vw, 54px);
+  color: var(--ivory);
+  transition: background 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+
+.site-header.is-scrolled {
+  background: rgba(251, 246, 233, 0.92);
+  color: var(--ink);
+  box-shadow: 0 10px 30px rgba(22, 32, 29, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.brand,
+.nav,
+.header-controls,
+.header-action {
+  min-width: 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 18px rgba(8, 13, 12, 0.3));
+}
+
+.site-header.is-scrolled .brand-logo {
+  filter: drop-shadow(0 5px 12px rgba(22, 32, 29, 0.18));
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: clamp(14px, 2.5vw, 32px);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-controls {
+  display: flex;
+  justify-self: end;
+  align-items: center;
+  gap: 12px;
+}
+
+.language-switch {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  min-width: 76px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 3px;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.language-switch button {
+  min-width: 32px;
+  min-height: 28px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: currentColor;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.language-switch button[aria-pressed="true"] {
+  background: var(--amber-light);
+  color: #16120c;
+}
+
+.header-action {
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 11px 17px;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  align-items: center;
+  min-height: 92vh;
+  overflow: hidden;
+  background: #0f1614;
+}
+
+.hero-image,
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  object-fit: cover;
+}
+
+.hero-shade {
+  background:
+    linear-gradient(90deg, rgba(8, 13, 12, 0.22), rgba(8, 13, 12, 0.58) 46%, rgba(8, 13, 12, 0.82)),
+    linear-gradient(0deg, rgba(8, 13, 12, 0.38), transparent 34%);
+}
+
+.hero-content {
+  position: relative;
+  width: min(660px, calc(100% - 36px));
+  margin-left: auto;
+  margin-right: clamp(18px, 7vw, 92px);
+  padding-top: 92px;
+  color: var(--ivory);
+}
+
+.eyebrow,
+.section-kicker,
+.programme-type {
+  margin: 0 0 14px;
+  color: var(--amber-light);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(56px, 8vw, 116px);
+  line-height: 0.88;
+  font-weight: 700;
+}
+
+.hero-copy {
+  max-width: 570px;
+  margin: 28px 0 0;
+  color: rgba(255, 250, 240, 0.88);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(18px, 2vw, 23px);
+  line-height: 1.55;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.button,
+.contact-form button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  border-radius: 999px;
+  padding: 13px 20px;
+  border: 1px solid transparent;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.button-primary,
+.contact-form button {
+  background: var(--amber-light);
+  color: #16120c;
+}
+
+.button-secondary {
+  border-color: rgba(255, 250, 240, 0.55);
+  color: var(--ivory);
+}
+
+.intro,
+.programmes,
+.method,
+.results,
+.contact {
+  padding: clamp(62px, 9vw, 116px) clamp(18px, 5vw, 72px);
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) 1.2fr;
+  gap: clamp(30px, 6vw, 86px);
+  background: var(--ivory);
+}
+
+.intro-copy h2,
+.section-heading h2,
+.method h2,
+.results h2,
+.contact h2 {
+  margin: 0;
+  max-width: 760px;
+  font-size: clamp(32px, 4.8vw, 64px);
+  line-height: 1.02;
+}
+
+.intro .section-kicker,
+.programmes .section-kicker,
+.method .section-kicker,
+.results .section-kicker,
+.contact .section-kicker {
+  color: var(--red);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.intro-grid article {
+  min-height: 250px;
+  padding: 28px;
+  background: var(--ivory);
+}
+
+.intro-grid span {
+  color: var(--amber);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+h3 {
+  margin: 22px 0 12px;
+  font-size: 26px;
+}
+
+p {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+.intro-grid p,
+.programme p,
+.method-panel p,
+.contact-copy p,
+.footer span:last-child {
+  color: var(--ink-soft);
+}
+
+.programmes {
+  background: var(--paper);
+}
+
+.section-heading {
+  display: grid;
+  grid-template-columns: 0.38fr 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-bottom: 34px;
+}
+
+.programme-list {
+  display: grid;
+  gap: 14px;
+}
+
+.programme {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.65fr) 1fr auto;
+  align-items: center;
+  gap: 26px;
+  padding: 26px 30px;
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, 0.7);
+}
+
+.programme h3 {
+  margin: 0;
+}
+
+.programme-type {
+  margin-bottom: 6px;
+  color: var(--red);
+}
+
+.programme a {
+  border-bottom: 2px solid var(--amber);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-weight: 850;
+}
+
+.method {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) 1.15fr;
+  gap: 24px;
+  background: var(--moss-dark);
+  color: var(--ivory);
+}
+
+.method-panel {
+  padding-right: clamp(0px, 5vw, 72px);
+}
+
+.method-panel p {
+  max-width: 580px;
+  color: rgba(255, 250, 240, 0.72);
+}
+
+.steps {
+  display: grid;
+  gap: 14px;
+  align-content: center;
+}
+
+.steps div {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 20px;
+  padding: 24px;
+  border-left: 4px solid var(--amber-light);
+  background: rgba(255, 250, 240, 0.08);
+}
+
+.steps strong {
+  font-size: 25px;
+}
+
+.steps span {
+  color: rgba(255, 250, 240, 0.75);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 38px;
+  background: var(--ivory);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  align-items: stretch;
+}
+
+.metrics div {
+  display: grid;
+  align-content: center;
+  min-height: 180px;
+  padding: 24px;
+  border: 1px solid var(--line);
+}
+
+.metrics strong {
+  color: var(--red);
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1;
+}
+
+.metrics span {
+  margin-top: 10px;
+  color: var(--ink-soft);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.45;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(300px, 520px);
+  gap: clamp(30px, 8vw, 110px);
+  background: var(--paper);
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: var(--ivory);
+  box-shadow: var(--shadow);
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--ink-soft);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid rgba(22, 32, 29, 0.24);
+  border-radius: 2px;
+  padding: 13px 14px;
+  background: #fffdf8;
+  color: var(--ink);
+  font: 16px Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  border: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px clamp(18px, 5vw, 72px);
+  background: var(--ink);
+  color: var(--ivory);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+}
+
+@media (max-width: 960px) {
+  .site-header {
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero-content {
+    margin-right: 24px;
+  }
+
+  .intro,
+  .section-heading,
+  .method,
+  .results,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-grid,
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .programme {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    position: absolute;
+    grid-template-columns: 1fr;
+    padding: 14px 16px;
+  }
+
+  .header-controls {
+    justify-self: stretch;
+    justify-content: space-between;
+  }
+
+  .brand span:last-child {
+    max-width: none;
+    white-space: normal;
+    line-height: 1.08;
+  }
+
+  .header-action {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 88vh;
+    align-items: end;
+  }
+
+  .hero-shade {
+    background:
+      linear-gradient(0deg, rgba(8, 13, 12, 0.88), rgba(8, 13, 12, 0.58) 58%, rgba(8, 13, 12, 0.18)),
+      linear-gradient(90deg, rgba(8, 13, 12, 0.12), rgba(8, 13, 12, 0.32));
+  }
+
+  .hero-content {
+    width: calc(100% - 32px);
+    margin: 0 16px 40px;
+    padding-top: 120px;
+  }
+
+  .hero h1 {
+    font-size: clamp(48px, 15vw, 72px);
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .steps div {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
+m>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>The English Lantern</span>
+      <span data-i18n="footerText">English as a Second Language tutoring, writing coaching, and conversation practice.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
