@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fbf6e9">
-  <meta name="description" content="The English Lantern is coming soon. Practical English as a Second Language lessons and conversation practice to help you build skills and grow in confidence.">
+  <meta name="description" content="The English Lantern is coming soon. Practical English lessons and conversation practice to help you express yourself clearly and grow in confidence.">
   <title>The English Lantern — Coming Soon</title>
   <style>
     :root {
@@ -15,6 +15,7 @@
       --ivory: #fffaf0;
       --moss: #536a55;
       --amber: #c7842b;
+      --amber-light: #f3c56e;
       --line: rgba(22, 32, 29, .16);
       font-family: Georgia, "Times New Roman", serif;
     }
@@ -26,104 +27,161 @@
       display: grid;
       grid-template-rows: auto 1fr auto;
       color: var(--ink);
-      background:
-        radial-gradient(ellipse at 80% 15%, rgba(199, 132, 43, .10), transparent 55%),
-        var(--paper);
+      background: var(--paper);
     }
-    .wrap {
-      width: min(100% - 48px, 1120px);
-      margin-inline: auto;
-    }
-    header {
-      padding-block: 30px;
+    .wrap { width: min(100% - 64px, 1180px); margin-inline: auto; }
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding-block: 24px;
       border-bottom: 1px solid var(--line);
     }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      font-size: 1.2rem;
-      font-weight: 700;
-      letter-spacing: -.02em;
-    }
-    .brand::before {
-      content: "";
-      width: 5px;
-      height: 30px;
-      border-radius: 4px;
-      background: var(--amber);
+    .brand-name { font-size: 1.15rem; font-weight: 700; }
+    .language-switch {
+      display: inline-flex;
       flex-shrink: 0;
+      padding: 3px;
+      border: 1px solid var(--moss);
+      border-radius: 999px;
     }
+    .language-switch button {
+      min-width: 44px;
+      min-height: 44px;
+      padding: 8px;
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--ink);
+      font: 700 .8rem ui-sans-serif, system-ui, sans-serif;
+      cursor: pointer;
+    }
+    .language-switch button[aria-pressed="true"] { background: var(--amber-light); }
+    .language-switch button:focus-visible { outline: 3px solid var(--moss); outline-offset: 4px; }
     main {
       display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       align-items: center;
-      padding-block: clamp(64px, 12vh, 130px);
+      gap: clamp(36px, 6vw, 90px);
+      padding-block: 48px 64px;
     }
-    .introduction { max-width: 780px; }
+    .brand-art { margin: 0; }
+    .brand-art img { display: block; width: 100%; height: auto; }
     .eyebrow {
-      margin: 0 0 24px;
+      margin: 0 0 22px;
       color: var(--moss);
       font-family: ui-sans-serif, system-ui, sans-serif;
-      font-size: .8rem;
+      font-size: .75rem;
       font-weight: 750;
-      letter-spacing: .14em;
+      letter-spacing: .12em;
       text-transform: uppercase;
-      line-height: 1.6;
+      line-height: 1.7;
     }
     h1 {
       margin: 0;
-      font-size: clamp(3.2rem, 9vw, 6.8rem);
+      font-size: clamp(3rem, 6.2vw, 5.6rem);
       font-weight: 400;
-      letter-spacing: -.055em;
+      letter-spacing: -.05em;
       line-height: 1.04;
     }
     h1::after {
       content: "";
       display: block;
-      width: 72px;
+      width: 64px;
       height: 3px;
-      margin-top: 32px;
+      margin-top: 28px;
       background: var(--amber);
     }
     .description {
-      max-width: 630px;
-      margin: 30px 0 0;
+      max-width: 520px;
+      margin: 26px 0 0;
       color: var(--ink-soft);
       font-family: ui-sans-serif, system-ui, sans-serif;
-      font-size: clamp(1.1rem, 2.3vw, 1.35rem);
-      line-height: 1.75;
+      font-size: clamp(1.05rem, 1.6vw, 1.18rem);
+      line-height: 1.8;
     }
     footer {
-      padding-block: 24px;
+      padding-block: 22px;
       border-top: 1px solid var(--line);
       color: var(--ink-soft);
-      font-family: ui-sans-serif, system-ui, sans-serif;
-      font-size: .8rem;
-      line-height: 1.6;
+      font: .8rem / 1.6 ui-sans-serif, system-ui, sans-serif;
     }
     footer p { margin: 0; }
-    @media (max-width: 480px) {
-      .wrap { width: calc(100% - 40px); }
-      header { padding-block: 24px; }
-      .brand { font-size: 1.1rem; }
-      main { padding-block: 64px; }
-      .eyebrow { font-size: .72rem; letter-spacing: .1em; }
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 40px, 540px); }
+      .site-header { padding-block: 14px; gap: 12px; }
+      .brand-name { font-size: 1rem; }
+      main { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-block: 22px 38px; }
+      .brand-art { width: min(100%, 300px); margin-inline: auto; }
+      .eyebrow { margin-bottom: 14px; font-size: .7rem; letter-spacing: .09em; }
+      h1 { font-size: clamp(2.65rem, 11.5vw, 4rem); }
+      h1::after { margin-top: 20px; }
+      .description { margin-top: 20px; font-size: 1.05rem; line-height: 1.7; }
+    }
+    @media (max-width: 360px) {
+      .wrap { width: calc(100% - 32px); }
+      .brand-name { max-width: 150px; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="wrap brand">The English Lantern</div>
+  <header class="site-header wrap">
+    <span class="brand-name">The English Lantern</span>
+    <div class="language-switch" role="group" aria-label="Choose language">
+      <button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+      <button type="button" data-lang="es" lang="es" aria-label="Español" aria-pressed="false">ES</button>
+    </div>
   </header>
   <main class="wrap">
+    <figure class="brand-art">
+      <img src="the-english-lantern-logo.png" width="1024" height="1024" alt="The English Lantern — a glowing lantern framed by ivy" fetchpriority="high">
+    </figure>
     <section class="introduction" aria-labelledby="coming-soon">
-      <p class="eyebrow">English as a Second Language</p>
-      <h1 id="coming-soon">Coming soon.</h1>
-      <p class="description">A welcoming place to learn English for everyday life. The English Lantern brings together practical ESL lessons and conversation practice to help you build skills, express yourself clearly, and grow in confidence.</p>
+      <p class="eyebrow" data-copy="eyebrow">English as a Second Language</p>
+      <h1 id="coming-soon" data-copy="heading">Coming soon.</h1>
+      <p class="description" data-copy="description">A welcoming place to learn English for everyday life. The English Lantern brings together practical ESL lessons and conversation practice to help you build skills, express yourself clearly, and grow in confidence.</p>
     </section>
   </main>
-  <footer>
-    <div class="wrap"><p>© 2026 The English Lantern</p></div>
-  </footer>
+  <footer class="wrap"><p>© 2026 The English Lantern</p></footer>
+  <script>
+    const copy = {
+      en: {
+        title: 'The English Lantern — Coming Soon',
+        eyebrow: 'English as a Second Language',
+        heading: 'Coming soon.',
+        description: 'A welcoming place to learn English for everyday life. The English Lantern brings together practical ESL lessons and conversation practice to help you build skills, express yourself clearly, and grow in confidence.',
+        imageAlt: 'The English Lantern — a glowing lantern framed by ivy',
+        languageLabel: 'Choose language',
+        metaDescription: 'The English Lantern is coming soon. Practical English lessons and conversation practice to help you express yourself clearly and grow in confidence.'
+      },
+      es: {
+        title: 'The English Lantern — Próximamente',
+        eyebrow: 'Inglés como segundo idioma',
+        heading: 'Próximamente.',
+        description: 'Un espacio acogedor para aprender inglés para la vida cotidiana. The English Lantern combina clases prácticas de inglés y práctica de conversación para ayudarte a desarrollar tus habilidades, expresarte con claridad y ganar confianza.',
+        imageAlt: 'The English Lantern — un farol encendido rodeado de hiedra',
+        languageLabel: 'Elige el idioma',
+        metaDescription: 'The English Lantern llega próximamente. Clases prácticas de inglés y conversación para ayudarte a expresarte con claridad y ganar confianza.'
+      }
+    };
+    document.querySelectorAll('[data-lang]').forEach(button => {
+      button.addEventListener('click', () => {
+        const language = button.dataset.lang;
+        const content = copy[language];
+        document.documentElement.lang = language;
+        document.title = content.title;
+        document.querySelectorAll('[data-copy]').forEach(element => {
+          element.textContent = content[element.dataset.copy];
+        });
+        document.querySelector('.brand-art img').alt = content.imageAlt;
+        document.querySelector('.language-switch').setAttribute('aria-label', content.languageLabel);
+        document.querySelector('meta[name="description"]').content = content.metaDescription;
+        document.querySelectorAll('[data-lang]').forEach(option => {
+          option.setAttribute('aria-pressed', String(option.dataset.lang === language));
+        });
+      });
+    });
+  </script>
 </body>
 </html>
