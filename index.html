@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf6e9">
+  <meta name="description" content="The English Lantern is coming soon. Practical English as a Second Language lessons and conversation practice to help you build skills and grow in confidence.">
+  <title>The English Lantern — Coming Soon</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #16201d;
+      --ink-soft: #405049;
+      --paper: #fbf6e9;
+      --ivory: #fffaf0;
+      --moss: #536a55;
+      --amber: #c7842b;
+      --line: rgba(22, 32, 29, .16);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 80% 15%, rgba(199, 132, 43, .10), transparent 55%),
+        var(--paper);
+    }
+    .wrap {
+      width: min(100% - 48px, 1120px);
+      margin-inline: auto;
+    }
+    header {
+      padding-block: 30px;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -.02em;
+    }
+    .brand::before {
+      content: "";
+      width: 5px;
+      height: 30px;
+      border-radius: 4px;
+      background: var(--amber);
+      flex-shrink: 0;
+    }
+    main {
+      display: grid;
+      align-items: center;
+      padding-block: clamp(64px, 12vh, 130px);
+    }
+    .introduction { max-width: 780px; }
+    .eyebrow {
+      margin: 0 0 24px;
+      color: var(--moss);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: .8rem;
+      font-weight: 750;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      line-height: 1.6;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(3.2rem, 9vw, 6.8rem);
+      font-weight: 400;
+      letter-spacing: -.055em;
+      line-height: 1.04;
+    }
+    h1::after {
+      content: "";
+      display: block;
+      width: 72px;
+      height: 3px;
+      margin-top: 32px;
+      background: var(--amber);
+    }
+    .description {
+      max-width: 630px;
+      margin: 30px 0 0;
+      color: var(--ink-soft);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: clamp(1.1rem, 2.3vw, 1.35rem);
+      line-height: 1.75;
+    }
+    footer {
+      padding-block: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--ink-soft);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: .8rem;
+      line-height: 1.6;
+    }
+    footer p { margin: 0; }
+    @media (max-width: 480px) {
+      .wrap { width: calc(100% - 40px); }
+      header { padding-block: 24px; }
+      .brand { font-size: 1.1rem; }
+      main { padding-block: 64px; }
+      .eyebrow { font-size: .72rem; letter-spacing: .1em; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap brand">The English Lantern</div>
+  </header>
+  <main class="wrap">
+    <section class="introduction" aria-labelledby="coming-soon">
+      <p class="eyebrow">English as a Second Language</p>
+      <h1 id="coming-soon">Coming soon.</h1>
+      <p class="description">A welcoming place to learn English for everyday life. The English Lantern brings together practical ESL lessons and conversation practice to help you build skills, express yourself clearly, and grow in confidence.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap"><p>© 2026 The English Lantern</p></div>
+  </footer>
+</body>
+</html>
