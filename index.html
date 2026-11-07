@@ -123,6 +123,88 @@
       .wrap { width: calc(100% - 32px); }
       .brand-name { max-width: 150px; }
     }
+
+    .launch-signup {
+      max-width: 520px;
+      margin-top: 28px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+    }
+    .launch-signup h2 {
+      margin: 0;
+      color: var(--ink);
+      font: 400 clamp(1.65rem, 2.8vw, 2rem) / 1.2 Georgia, "Times New Roman", serif;
+      letter-spacing: -.025em;
+    }
+    .launch-signup .launch-intro {
+      margin: 10px 0 18px;
+      color: var(--ink-soft);
+      font-size: .96rem;
+      line-height: 1.65;
+    }
+    .launch-signup .launch-fields { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
+    .launch-signup .launch-email-field { flex: 1 1 210px; min-width: 0; }
+    .launch-signup label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--ink);
+      font-size: .86rem;
+      font-weight: 700;
+    }
+    .launch-signup input[type="email"] {
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 14px;
+      border: 1px solid var(--moss);
+      border-radius: 8px;
+      color: var(--ink);
+      background: var(--ivory);
+      font: inherit;
+    }
+    .launch-signup input[type="email"]::placeholder { color: #677069; }
+    .launch-signup input[type="email"]:focus-visible,
+    .launch-signup button:focus-visible,
+    .launch-signup a:focus-visible {
+      outline: 3px solid var(--moss);
+      outline-offset: 3px;
+    }
+    .launch-signup input[aria-invalid="true"] { border-color: #923c28; }
+    .launch-signup .launch-submit {
+      flex: 1 0 auto;
+      min-height: 48px;
+      padding: 12px 18px;
+      border: 1px solid var(--moss);
+      border-radius: 8px;
+      background: var(--moss);
+      color: var(--ivory);
+      font: 700 .9rem / 1.5 ui-sans-serif, system-ui, sans-serif;
+      cursor: pointer;
+    }
+    .launch-signup .launch-submit:hover { background: #415642; }
+    .launch-signup .launch-submit:disabled { opacity: .65; cursor: wait; }
+    .launch-signup .launch-consent,
+    .launch-signup .launch-no-script {
+      margin: 14px 0 0;
+      color: var(--ink-soft);
+      font-size: .77rem;
+      line-height: 1.7;
+    }
+    .launch-signup .launch-consent a,
+    .launch-signup .launch-no-script a { color: var(--ink); text-underline-offset: 3px; }
+    .launch-signup .launch-status {
+      min-height: 1.6em;
+      margin: 12px 0 0;
+      color: var(--ink-soft);
+      font-size: .88rem;
+      line-height: 1.6;
+    }
+    .launch-signup .launch-status[data-state="success"] { color: #315b3d; }
+    .launch-signup .launch-status[data-state="error"] { color: #923c28; }
+    @media (max-width: 420px) {
+      .launch-signup .launch-email-field,
+      .launch-signup .launch-submit { flex-basis: 100%; }
+    }
   </style>
 </head>
 <body>
@@ -141,6 +223,32 @@
       <p class="eyebrow" data-copy="eyebrow">English as a Second Language</p>
       <h1 id="coming-soon" data-copy="heading">Coming soon.</h1>
       <p class="description" data-copy="description">A welcoming place to learn English for everyday life. The English Lantern brings together practical ESL lessons and conversation practice to help you build skills, express yourself clearly, and grow in confidence.</p>
+      <form class="launch-signup" id="launch-list" data-launch-signup data-launch-product="english-lantern"
+            action="https://canais.tech/api/launch" method="post" aria-labelledby="launch-heading" novalidate>
+        <h2 id="launch-heading" data-copy="launchHeading">Get on the list.</h2>
+        <p class="launch-intro" data-copy="launchIntro">Be first to know when The English Lantern is ready. Leave your email for an availability update.</p>
+        <div class="launch-fields">
+          <div class="launch-email-field">
+            <label for="launch-email" data-copy="launchEmailLabel">Email address</label>
+            <input id="launch-email" name="email" type="email" autocomplete="email"
+                   inputmode="email" autocapitalize="none" spellcheck="false"
+                   maxlength="254" placeholder="you@example.com" required
+                   aria-describedby="launch-consent launch-status">
+          </div>
+          <button class="launch-submit" type="submit" disabled>Get on the list</button>
+        </div>
+        <div hidden aria-hidden="true" inert>
+          <label for="launch-website">Website</label>
+          <input id="launch-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <p class="launch-consent" id="launch-consent">
+          <span data-copy="launchConsent">By joining, you agree to receive emails from Canais about The English Lantern’s launch and availability.</span>
+          <a href="https://canais.tech/privacy" data-copy="launchPrivacy">Privacy</a>.
+          <span data-copy="launchLeave">To leave the list, email</span> <a href="mailto:hello@canais.tech">hello@canais.tech</a>.
+        </p>
+        <p class="launch-status" id="launch-status" data-launch-status role="status" aria-live="polite" aria-atomic="true"></p>
+        <noscript><p class="launch-no-script"><span lang="en">To join, enable JavaScript or email <a href="mailto:hello@canais.tech?subject=The%20English%20Lantern%20launch%20list">hello@canais.tech</a> and ask to join The English Lantern launch list.</span> <span lang="es">Para apuntarte, activa JavaScript o escribe a <a href="mailto:hello@canais.tech?subject=The%20English%20Lantern%20launch%20list">hello@canais.tech</a> y pide unirte a la lista de The English Lantern.</span></p></noscript>
+      </form>
     </section>
   </main>
   <footer class="wrap"><p>© 2026 The English Lantern</p></footer>
@@ -153,6 +261,13 @@
         description: 'A welcoming place to learn English for everyday life. The English Lantern brings together practical ESL lessons and conversation practice to help you build skills, express yourself clearly, and grow in confidence.',
         imageAlt: 'The English Lantern — a glowing lantern framed by ivy',
         languageLabel: 'Choose language',
+        launchHeading: 'Get on the list.',
+        launchIntro: 'Be first to know when The English Lantern is ready. Leave your email for an availability update.',
+        launchEmailLabel: 'Email address',
+        launchPlaceholder: 'you@example.com',
+        launchConsent: 'By joining, you agree to receive emails from Canais about The English Lantern’s launch and availability.',
+        launchPrivacy: 'Privacy',
+        launchLeave: 'To leave the list, email',
         metaDescription: 'The English Lantern is coming soon. Practical English lessons and conversation practice to help you express yourself clearly and grow in confidence.'
       },
       es: {
@@ -162,6 +277,13 @@
         description: 'Un espacio acogedor para aprender inglés para la vida cotidiana. The English Lantern combina clases prácticas de inglés y práctica de conversación para ayudarte a desarrollar tus habilidades, expresarte con claridad y ganar confianza.',
         imageAlt: 'The English Lantern — un farol encendido rodeado de hiedra',
         languageLabel: 'Elige el idioma',
+        launchHeading: 'Apúntate a la lista.',
+        launchIntro: 'Entérate cuando The English Lantern esté disponible. Deja tu correo y te avisaremos.',
+        launchEmailLabel: 'Correo electrónico',
+        launchPlaceholder: 'tu@ejemplo.com',
+        launchConsent: 'Al apuntarte, aceptas recibir correos de Canais sobre el lanzamiento y la disponibilidad de The English Lantern.',
+        launchPrivacy: 'Privacidad',
+        launchLeave: 'Para salir de la lista, escribe a',
         metaDescription: 'The English Lantern llega próximamente. Clases prácticas de inglés y conversación para ayudarte a expresarte con claridad y ganar confianza.'
       }
     };
@@ -175,13 +297,16 @@
           element.textContent = content[element.dataset.copy];
         });
         document.querySelector('.brand-art img').alt = content.imageAlt;
+        document.querySelector('#launch-email').placeholder = content.launchPlaceholder;
         document.querySelector('.language-switch').setAttribute('aria-label', content.languageLabel);
         document.querySelector('meta[name="description"]').content = content.metaDescription;
         document.querySelectorAll('[data-lang]').forEach(option => {
           option.setAttribute('aria-pressed', String(option.dataset.lang === language));
         });
+        document.dispatchEvent(new Event('launch-language-change'));
       });
     });
   </script>
+  <script src="launch-signup.js"></script>
 </body>
 </html>
