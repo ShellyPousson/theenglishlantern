@@ -146,6 +146,7 @@
       font-size: .96rem;
       line-height: 1.65;
     }
+    .launch-signup .launch-name-field { margin-bottom: 12px; }
     .launch-signup .launch-fields { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
     .launch-signup .launch-email-field { flex: 1 1 210px; min-width: 0; }
     .launch-signup label {
@@ -155,7 +156,8 @@
       font-size: .86rem;
       font-weight: 700;
     }
-    .launch-signup input[type="email"] {
+    .launch-signup input[type="email"],
+    .launch-signup input[name="firstName"] {
       width: 100%;
       min-height: 48px;
       padding: 12px 14px;
@@ -167,6 +169,7 @@
     }
     .launch-signup input[type="email"]::placeholder { color: #677069; }
     .launch-signup input[type="email"]:focus-visible,
+    .launch-signup input[name="firstName"]:focus-visible,
     .launch-signup button:focus-visible,
     .launch-signup a:focus-visible {
       outline: 3px solid var(--moss);
@@ -232,6 +235,11 @@
             action="https://canais.tech/api/launch" method="post" aria-labelledby="launch-heading" novalidate>
         <h2 id="launch-heading" data-copy="launchHeading">Get on the list.</h2>
         <p class="launch-intro" data-copy="launchIntro">Be first to know when The English Lantern is ready. Leave your email for an availability update.</p>
+        <div class="launch-email-field launch-name-field">
+          <label for="launch-first-name" data-copy="launchNameLabel">First name (optional)</label>
+          <input id="launch-first-name" name="firstName" type="text" autocomplete="given-name"
+                 maxlength="80" placeholder="Your first name">
+        </div>
         <div class="launch-fields">
           <div class="launch-email-field">
             <label for="launch-email" data-copy="launchEmailLabel">Email address</label>
@@ -269,6 +277,8 @@
         canaisCredit: 'A Canais LLC product.',
         launchHeading: 'Get on the list.',
         launchIntro: 'Be first to know when The English Lantern is ready. Leave your email for an availability update.',
+        launchNameLabel: 'First name (optional)',
+        launchNamePlaceholder: 'Your first name',
         launchEmailLabel: 'Email address',
         launchPlaceholder: 'you@example.com',
         launchConsent: 'By joining, you agree to receive emails from Canais about The English Lantern’s launch and availability.',
@@ -286,6 +296,8 @@
         canaisCredit: 'Un producto de Canais LLC.',
         launchHeading: 'Apúntate a la lista.',
         launchIntro: 'Entérate cuando The English Lantern esté disponible. Deja tu correo y te avisaremos.',
+        launchNameLabel: 'Nombre (opcional)',
+        launchNamePlaceholder: 'Tu nombre',
         launchEmailLabel: 'Correo electrónico',
         launchPlaceholder: 'tu@ejemplo.com',
         launchConsent: 'Al apuntarte, aceptas recibir correos de Canais sobre el lanzamiento y la disponibilidad de The English Lantern.',
@@ -305,6 +317,7 @@
         });
         document.querySelector('.brand-art img').alt = content.imageAlt;
         document.querySelector('#launch-email').placeholder = content.launchPlaceholder;
+        document.querySelector('#launch-first-name').placeholder = content.launchNamePlaceholder;
         document.querySelector('.language-switch').setAttribute('aria-label', content.languageLabel);
         document.querySelector('meta[name="description"]').content = content.metaDescription;
         document.querySelectorAll('[data-lang]').forEach(option => {
